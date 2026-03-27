@@ -1,0 +1,50 @@
+{
+  "earnings": {
+    "totalEarned": 12450.75,
+    "availableBalance": 0,
+    "pendingBalance": 2130.25,
+    "paidOut": 10320.5
+  },
+  "transactions": [
+    {
+      "id": "1772751213961",
+      "amount": 8320.5,
+      "currency": "USD",
+      "status": "completed",
+      "date": "2026-03-05",
+      "description": "Payout initiated via IDP authentication",
+      "createdAt": "2026-03-05T22:53:33.961Z",
+      "updatedAt": "2026-03-05T22:53:36.003Z"
+    },
+    {
+      "id": "1",
+      "amount": 1500,
+      "currency": "USD",
+      "status": "completed",
+      "date": "2024-12-15",
+      "description": "December payout",
+      "createdAt": "2024-12-15T10:00:00.000Z",
+      "updatedAt": "2024-12-15T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "amount": 500,
+      "currency": "USD",
+      "status": "completed",
+      "date": "2024-11-15",
+      "description": "November payout",
+      "createdAt": "2024-11-15T10:00:00.000Z",
+      "updatedAt": "2024-11-15T10:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "amount": 2130.25,
+      "currency": "USD",
+      "status": "pending",
+      "date": "2025-01-05",
+      "description": "Pending settlement",
+      "createdAt": "2025-01-05T10:00:00.000Z",
+      "updatedAt": "2025-01-05T10:00:00.000Z"
+    }
+  ]
+}

@@ -47,7 +47,7 @@
     "nodemon": "^3.1.11",
     "prettier": "^3.2.1",
     "tsx": "^4.7.0",
-    "typescript": "^4.9.5",
+    "typescript": "^5.4.5",
     "vite": "^4.3.1",
     "vite-tsconfig-paths": "^4.2.3"
   },
@@ -55,7 +55,8 @@
     "dev": "concurrently -n web,api -c cyan,magenta \"npm run dev:client\" \"npm run dev:server\"",
     "dev:client": "npx kill-port 5180 && npx kill-port 5001 && refine dev",
     "dev:server": "npx kill-port 3007 && nodemon --watch server --ignore server/dist --ext ts,json --exec \"tsx server/src/index.ts\"",
-    "build": "tsc && refine build && npm run build:server",
+    "build": "tsc && refine build",
+    "build:all": "tsc && refine build && npm run build:server",
     "build:server": "tsc -p server/tsconfig.json",
     "start:server": "node server/dist/index.js",
     "preview": "refine start",

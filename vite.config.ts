@@ -6,6 +6,15 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   plugins: [tsconfigPaths(), react()],
+  build: {
+    sourcemap: false,
+    rollupOptions: {
+      onwarn(warning, warn) {
+        if (warning.message.includes("Can't resolve original location of error")) return;
+        warn(warning);
+      },
+    },
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
